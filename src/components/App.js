@@ -16,7 +16,7 @@ const LoadableRoot = Loadable({
   loading: () => <div>Loading...</div>
 });
 
-const initialState = { questions: [] };
+const initialState = { questions: [{ text: 'How to add a question?', answer: 'Just use the form below.' }] };
 const middlewares = [thunk];
 
 if (process.NODE_ENV !== 'production') {
